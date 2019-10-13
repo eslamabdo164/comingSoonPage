@@ -1,0 +1,92 @@
+/* main Section */
+body {
+    font-family: 'Roboto', sans-serif;
+}
+.center {
+    margin: 0 auto ;
+    text-align: center
+}
+
+/* responsive class for logo image */
+#logo {
+    margin-top: 2rem;
+    max-width: 30% ;
+    height: auto;
+}
+#main h6 {
+    text-transform: uppercase ; 
+    letter-spacing: 0.4rem;
+    margin: 6rem auto 0 auto;
+}
+
+#main h1 {
+    text-transform: capitalize ; 
+    font-weight: 700;
+    margin: 15px 0 ;
+    word-spacing: 5px;
+}
+
+#main p {
+    color: #aaa ;
+    font-size: 0.75em;
+    margin: 10px 0 ;    
+}
+#main form {
+    margin: 2rem auto
+}
+
+#main form input { 
+    background-color:#FFFFFF;
+    border:solid 1px #A9A9A9;
+    font-size:13px;
+    color:#000000;
+    -moz-border-radius:120px;
+    -webkit-border-radius:120px;
+    border-radius:120px;
+    padding-top:9px;
+    padding-bottom:9px;
+    padding-left:21px;
+    padding-right:21px;
+    cursor: pointer;
+    outline: none
+ }
+
+ form button {
+    background-color:#36D0FF;
+    border:solid 0px #A9A9A9;
+    font-size:12px;
+    color:#fff;
+    font-weight:bold;
+    text-transform: uppercase;
+    padding-top:9px;
+    padding-bottom:9px;
+    padding-right:25px;
+    padding-left:25px;
+    -moz-border-radius:25px;
+    -webkit-border-radius:25px;
+    border-radius:25px;
+
+ }
+/* ============        ============= */
+ #social {
+    margin-top: 7rem ;
+ }   
+ #social a {
+     text-decoration: none
+ }
+ #social img {
+     width: 20px ;
+     height: auto;
+     margin-right: 2rem;
+    
+ }
+ /* ============        ============= */
+ #contact  p {
+    display: inline-block; 
+    margin-top: 1rem;
+
+ }
+
+ #contact span {
+     font-weight: bold
+ }
