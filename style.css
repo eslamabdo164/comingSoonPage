@@ -1,6 +1,7 @@
 /* main Section */
-body {
+body,html {
     font-family: 'Roboto', sans-serif;
+    height: 100vh
 }
 .center {
     margin: 0 auto ;
@@ -9,14 +10,13 @@ body {
 
 /* responsive class for logo image */
 #logo {
-    margin-top: 2rem;
     max-width: 30% ;
     height: auto;
 }
 #main h6 {
     text-transform: uppercase ; 
     letter-spacing: 0.4rem;
-    margin: 6rem auto 0 auto;
+    margin: 2rem auto 0 auto;
 }
 
 #main h1 {
@@ -69,15 +69,18 @@ body {
  }
 /* ============        ============= */
  #social {
-    margin-top: 7rem ;
+    margin-top: 4rem ;
  }   
  #social a {
-     text-decoration: none
+     text-decoration: none;
+    
+
  }
  #social img {
      width: 20px ;
      height: auto;
      margin-right: 2rem;
+     cursor: pointer;
     
  }
  /* ============        ============= */
