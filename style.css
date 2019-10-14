@@ -1,7 +1,9 @@
-/* main Section */
+/* Mobile View Section */
 body,html {
     font-family: 'Roboto', sans-serif;
-    height: 100vh
+    height: 100vh;
+    margin: 0; 
+    padding: 0
 }
 .center {
     margin: 0 auto ;
@@ -24,6 +26,7 @@ body,html {
     font-weight: 700;
     margin: 15px 0 ;
     word-spacing: 5px;
+    font-size: 28px
 }
 
 #main p {
@@ -52,19 +55,25 @@ body,html {
  }
 
  form button {
-    background-color:#36D0FF;
+    /* background-color:#36D0FF; */
+    background: rgba(121,27,30,1);
+    background: -moz-linear-gradient(left, rgba(121,27,30,1) 0%, rgba(121,27,30,0.96) 22%, rgba(80,122,196,0.88) 72%, rgba(80,122,196,0.84) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(121,27,30,1)), color-stop(22%, rgba(121,27,30,0.96)), color-stop(72%, rgba(80,122,196,0.88)), color-stop(100%, rgba(80,122,196,0.84)));
+    background: -webkit-linear-gradient(left, rgba(121,27,30,1) 0%, rgba(121,27,30,0.96) 22%, rgba(80,122,196,0.88) 72%, rgba(80,122,196,0.84) 100%);
+    background: -o-linear-gradient(left, rgba(121,27,30,1) 0%, rgba(121,27,30,0.96) 22%, rgba(80,122,196,0.88) 72%, rgba(80,122,196,0.84) 100%);
+    background: -ms-linear-gradient(left, rgba(121,27,30,1) 0%, rgba(121,27,30,0.96) 22%, rgba(80,122,196,0.88) 72%, rgba(80,122,196,0.84) 100%);
+    background: linear-gradient(to right, rgba(121,27,30,1) 0%, rgba(121,27,30,0.96) 22%, rgba(80,122,196,0.88) 72%, rgba(80,122,196,0.84) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#791b1e', endColorstr='#507ac4', GradientType=1 );
     border:solid 0px #A9A9A9;
     font-size:12px;
     color:#fff;
     font-weight:bold;
     text-transform: uppercase;
-    padding-top:9px;
-    padding-bottom:9px;
-    padding-right:25px;
-    padding-left:25px;
+    padding : 11px 70px;
     -moz-border-radius:25px;
     -webkit-border-radius:25px;
     border-radius:25px;
+    margin-top: 1rem;
 
  }
 /* ============        ============= */
@@ -83,7 +92,7 @@ body,html {
      cursor: pointer;
     
  }
- /* ============        ============= */
+ /* ============      ============= */
  #contact  p {
     display: inline-block; 
     margin-top: 1rem;
@@ -93,3 +102,51 @@ body,html {
  #contact span {
      font-weight: bold
  }
+
+ /* ============  Low Resolution Tablets, Mobiles (Landscape)    ============= */
+ @media (min-width: 481px) and (max-width: 767px) {
+    #main h1 {
+        font-size: 32px;
+    }
+    form button {
+        padding : 10px 30px
+    }
+    
+  }
+ /* ============  Tablets, Ipads  ============= */
+
+  @media (min-width: 768px) and (max-width: 1024px) {
+  
+    #main h1 {
+        font-size: 40px;
+    }
+    form button {
+        padding : 10px 30px
+    }
+    #main p {
+        font-size : 1rem;
+    }
+    #contact  p {
+        margin-right: 0.5rem;
+    }
+  }
+  @media (min-width: 1025px){
+  
+    #wrapper {
+        display: flex;
+    }
+    #main {
+       flex: 1
+    }
+    #hero {
+        flex: 1;
+        background: url('images/hero.jpg');
+        background-position: center center ;
+        background-size: cover;
+        height: 100vh;
+     }
+     form button {
+        padding : 10px 30px
+    }
+    
+  }
