@@ -53,8 +53,13 @@ body,html {
     padding-bottom:9px;
     padding-left:21px;
     padding-right:21px;
-    cursor: pointer;
     outline: none
+ }
+ #main form input:focus {
+    outline: none !important;
+    border:1px solid #249FB4 ;
+    box-shadow: 0 0 4px #719ECE;
+    transition: all 0.25s ease-in-out;
  }
 
  form button {
@@ -69,6 +74,8 @@ body,html {
     -webkit-border-radius:25px;
     border-radius:25px;
     margin-top: 1rem;
+    cursor: pointer ;
+    outline: none
 
  }
 /* ============        ============= */
