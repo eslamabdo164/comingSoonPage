@@ -10,6 +10,9 @@ body,html {
     text-align: center
 }
 
+#hero {
+    display: none
+}
 /* responsive class for logo image */
 #logo {
     max-width: 30% ;
@@ -55,15 +58,7 @@ body,html {
  }
 
  form button {
-    /* background-color:#36D0FF; */
-    background: rgba(121,27,30,1);
-    background: -moz-linear-gradient(left, rgba(121,27,30,1) 0%, rgba(121,27,30,0.96) 22%, rgba(80,122,196,0.88) 72%, rgba(80,122,196,0.84) 100%);
-    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(121,27,30,1)), color-stop(22%, rgba(121,27,30,0.96)), color-stop(72%, rgba(80,122,196,0.88)), color-stop(100%, rgba(80,122,196,0.84)));
-    background: -webkit-linear-gradient(left, rgba(121,27,30,1) 0%, rgba(121,27,30,0.96) 22%, rgba(80,122,196,0.88) 72%, rgba(80,122,196,0.84) 100%);
-    background: -o-linear-gradient(left, rgba(121,27,30,1) 0%, rgba(121,27,30,0.96) 22%, rgba(80,122,196,0.88) 72%, rgba(80,122,196,0.84) 100%);
-    background: -ms-linear-gradient(left, rgba(121,27,30,1) 0%, rgba(121,27,30,0.96) 22%, rgba(80,122,196,0.88) 72%, rgba(80,122,196,0.84) 100%);
-    background: linear-gradient(to right, rgba(121,27,30,1) 0%, rgba(121,27,30,0.96) 22%, rgba(80,122,196,0.88) 72%, rgba(80,122,196,0.84) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#791b1e', endColorstr='#507ac4', GradientType=1 );
+    background-color:#249FB4;
     border:solid 0px #A9A9A9;
     font-size:12px;
     color:#fff;
@@ -132,21 +127,60 @@ body,html {
   }
   @media (min-width: 1025px){
   
-    #wrapper {
+    #wrapper , #hero{
         display: flex;
     }
     #main {
        flex: 1
     }
-    #hero {
-        flex: 1;
+    .background {
         background: url('images/hero.jpg');
         background-position: center center ;
         background-size: cover;
         height: 100vh;
+        position: relative;
+    }
+    .layer {
+        background-color: rgba(36, 159, 180, 0.7);  
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+    #hero {
+        flex: 1;
+        
      }
      form button {
         padding : 10px 30px
+    }
+    .counter {
+        margin: 0 auto;
+        color: #fff;
+        position : relative;
+    }
+
+    .counter li {
+      display: inline-block;
+      font-size: 1.5em;
+      list-style-type: none;
+      padding: 1em;
+      text-transform: uppercase;
+    }
+    
+   .counter li span {
+      display: block;
+      font-size: 4.5rem;
+    }
+    /* Align the counter into the middle of the left Bg Image */
+    .counter ul {
+        width : 100%;
+        position: absolute;
+        margin: 0;
+        top: 50% ;
+        left: 50%;
+        transform: translate(-50%,-50%)
     }
     
   }
